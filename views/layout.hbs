@@ -1,16 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{title}}</title>
-  <link rel="stylesheet" href="/stylesheets/style.css" />
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wanderlust</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="https://content.codecademy.com/courses/intermediate-javascript-requests/wanderlust/logo.svg" alt="logo" />
+    </header>
+    <main>
+      <h1>Where do you want to land?</h1>
+      <form autocomplete="off">
+        <input type="text" id="city">
+        <button id="button" type="submit">Submit</button>
+      </form>
+    </main>
+    <div class="container">
+    <div id="destination">
 
-  {{{body}}}
+    </div>
+    <div class="sectiontitle">
+      <h2>CURRENT WEATHER</h2>
+    </div>
+    <section id="weather">
 
-  <script src="/javascripts/script.js"></script>
-</body>
+        <div class="weather" id="weather1">
+
+        </div>
+
+    </section>
+    <div class="sectiontitle">
+      <h2>TOP ATTRACTIONS</h2>
+    </div>
+    <section id="venues">
+      <div class="venue" id="venue1">
+
+      </div>
+      <div class="venue" id="venue2">
+
+      </div>
+      <div class="venue" id="venue3">
+
+      </div>
+    </section>
+    <footer>
+    </footer>
+
+  </div>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="public/helpers.js"></script>
+    <script src="public/main.js"></script>
+  </body>
 </html>
